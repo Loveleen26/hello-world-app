@@ -7,11 +7,6 @@ pipeline {
     }
 
     stages {
-        stage('Clone Repo') {
-            steps {
-                git 'https://github.com/<username>/<repo>.git'
-            }
-        }
 
         stage('ECR Login') {
             steps {
